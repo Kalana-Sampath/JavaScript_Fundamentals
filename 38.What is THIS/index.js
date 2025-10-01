@@ -21,19 +21,19 @@ person2.eat();
 
 // -------------- if you are using outside of any object------------------
 
-// console.log(this);   // --- return the window obeject (browser)
+console.log(this);   // --- return the window obeject (browser)
 
 // --------- * important note ---- this key words not work with arrow 
 // --- function   ---------------------------------------------------------
 
-// const person2 = {
-//     name: "Patrick",
-//     favFood: "pizza",
-//     sayHello: function(){console.log(`Hi! I am ${this.favFood}`)},
-//     eat: () => {console.log(`${this.name} is eating ${this.favFood}`)}
-// }
+const person3 = {
+    name: "Patrick",
+    favFood: "pizza",
+    sayHello: function(){console.log(`Hi! I am ${this.favFood}`)},
+    eat: () => {console.log(`${this.name} is eating ${this.favFood}`)}
+}
 
-// person2.eat();
+person2.eat();
 
 
 
